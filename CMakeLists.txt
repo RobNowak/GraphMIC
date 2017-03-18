@@ -67,7 +67,7 @@ endif()
 # graphmic
 # ******************************************************************************
 
-list(APPEND CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -stdlib=libc++")
+list(APPEND CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 ")
 add_definitions(-DUSE_INSTALL_TARGET)
 
 # moc
@@ -100,7 +100,7 @@ endif()
 # libraries
 # ******************************************************************************
 
-set(GRAPHMIC_QT_VERSION "5.6.0" CACHE STRING "Qt Version")
+set(GRAPHMIC_QT_VERSION "5.7.1" CACHE STRING "Qt Version")
 set(GRAPHMIC_QT_MODUlES Core Gui Widgets Quick Qml Concurrent Network DBus PrintSupport)
 set(GRAPHMIC_INTERNAL_LIBRARY_TARGETS)
 
